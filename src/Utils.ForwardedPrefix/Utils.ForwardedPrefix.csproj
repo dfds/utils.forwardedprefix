@@ -1,7 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>DFDS.Utils.ForwardedPrefix</AssemblyName>
+    <RootNamespace>DFDS.Utils.ForwardedPrefix</RootNamespace>
+    <PackageId>DFDS.Utils.ForwardedPrefix</PackageId>
+    <Authors>DFDS P-Project Team</Authors>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+  </ItemGroup>
 
 </Project>

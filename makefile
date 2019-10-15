@@ -1,5 +1,6 @@
 CONFIGURATION=Debug
 OUTPUT_DIR=${PWD}/.output
+PROJECT_FILE=Utils.ForwardedPrefix/Utils.ForwardedPrefix.csproj
 
 init: clean restore build
 
@@ -14,3 +15,6 @@ restore:
 
 build:
 	@cd src && dotnet build -c $(CONFIGURATION) -v m
+
+package:
+	@cd src && dotnet pack --no-build -c $(CONFIGURATION) -o $(OUTPUT_DIR) $(PROJECT_FILE)
