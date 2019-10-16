@@ -18,3 +18,6 @@ build:
 
 package:
 	@cd src && dotnet pack --no-build -c $(CONFIGURATION) -o $(OUTPUT_DIR) $(PROJECT_FILE)
+
+release: CONFIGURATION=Release
+release: clean restore build package
